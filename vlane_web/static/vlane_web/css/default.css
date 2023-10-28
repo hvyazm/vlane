@@ -1,0 +1,104 @@
+/* Common Styles */
+body {
+  font-family: 'Avenir Next', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Your existing CSS */
+
+.cart-icon {
+  color: aliceblue;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+
+.logo {
+  max-width: 25%;
+  height: auto;
+  position: fixed;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.background-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background-color: #000;
+  z-index: -1;
+}
+
+.gif {
+  position: absolute;
+  top: 0;
+  left: 14%;
+  width: auto;
+  height: 68%;
+  margin-top: -2rem;
+}
+
+main {
+  display: block;
+  padding: 2rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 43%;
+  width: 100%; /* Set a fixed width */
+}
+
+.product-card {
+  margin: 10px;
+  padding: 2rem;
+  max-width: 27%;
+  text-align: center;
+  width: 100%; /* Set a fixed width for each card */
+}
+
+.product-card h2 {
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.product-card p {
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.product-card a {
+  color: black;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-image:hover {
+  opacity: 0.8;
+}
+
+.description2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000000;
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 14px;
+}
+

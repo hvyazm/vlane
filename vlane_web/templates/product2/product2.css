@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(55, 56, 54);
+}
+.description {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.description h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Ensure the button is on top of the video */
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.back-button:hover {
+    background-color: #ff007b;
+}
+
+.photos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.photos img {
+    max-width: 100%; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 auto; /* Center the images horizontally */
+    padding: 2rem 0; /* Add vertical padding */
+}
+
+.photos img:nth-child(1) {
+    max-width: 50%; /* Set the maximum width to 50% of its container */
+    margin-bottom: 2rem; /* Add space below the first image */
+}
+
+.description2 {
+    position: absolute;
+    padding-top: 20rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 14px;
+    padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 767px) {
+    .description {
+        top: 50%;
+    }
+
+    .description h1 {
+        font-size: 24px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+
+    .description2 {
+        padding-top: 10rem;
+        font-size: 12px;
+        padding-bottom: 5rem;
+    }
+
+    .photos {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    .photos img {
+        max-width: 140%; /* Adjust the width as needed */
+        height: auto;
+        transform: translate(-12%);
+        margin: 0 auto; /* Center the images horizontally */
+        padding: 2rem 0; /* Add vertical padding */
+    }
+    
+    .photos img:nth-child(1) {
+        max-width: 60%; /* Set the maximum width to 50% of its container */
+        margin-bottom: 2rem; /* Add space below the first image */
+        transform: translate(-2%);
+    }
+    
+
+}
